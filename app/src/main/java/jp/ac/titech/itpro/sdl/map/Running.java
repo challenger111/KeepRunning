@@ -269,7 +269,7 @@ public class Running extends AppCompatActivity implements SensorEventListener {
                     double lon2=newLocation.getLongitude();
                     double addDistance=0;
                     newStep=curStepCount;
-                    if (Math.abs(lat1-lat2)>0.0000001 || Math.abs(lon1-lon2)>0.0000001){
+                    if (Math.abs(lat1-lat2)>0.000001 || Math.abs(lon1-lon2)>0.000001){
                         addDistance=0.43*height*(newStep-oldStep);
                     }
                     oldStep=newStep;
