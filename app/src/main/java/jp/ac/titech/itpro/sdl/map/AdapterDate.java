@@ -112,7 +112,7 @@ public class AdapterDate extends BaseAdapter {
                     Toast.makeText(context,"Already sign in!",Toast.LENGTH_SHORT).show();
                 }else{
                     if (Float.parseFloat(getPass1)>Float.parseFloat(goal)*1000) {
-                        if (true) {
+                        if (Integer.parseInt(getPass2)==days.get(i)) {
                             Toast.makeText(context, "Sign in success!", Toast.LENGTH_SHORT).show();
                             Write(i);
                             status.set(i, true);
